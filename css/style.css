@@ -1,0 +1,143 @@
+/*navbar*/
+
+.sign-in {
+    font-size: 15px;
+}
+/*navbar*/
+
+/*main*/
+
+.our-telegram {
+    font-family: Raleway;
+    font-size: 12px;
+}
+.txt.bold {
+    font-size: 13px;
+}
+/*main*/
+
+ul {
+    padding-left: 0;
+}
+li {
+    list-style-type: none;
+}
+/*knowledge-bases*/
+
+.file-body {
+    font-size: 14px;
+}
+/*knowledge-bases*/
+
+/*preloader*/
+
+.body-preloader {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: grey;
+}
+/*preloader*/
+
+.pics {
+    display: inline-block;
+    background-color: #000;
+}
+.image {
+    display: inline-block;
+    width: 160px;
+    height: 120px;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input+label {
+    display: block;
+    width: 160px;
+    height: 120px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    background-image: url('http://lorempixel.com/800/600');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    /*  transition: .4s;
+*/
+}
+input:checked+label {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /*  transform: translate(calc(2em + 160px - 100vw), calc(0px - 120px - 2em));
+*/
+    background-color: rgba(10, 10, 10, .9);
+    background-size: auto;
+    z-index: 99999;
+}
+/* preloader */
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+    25% {
+        height: 0%;
+    }
+    50% {
+        height: 100%;
+    }
+    75% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}

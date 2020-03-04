@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+        <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+        <title>
+            База знаний / Simple Insta
+        </title>
+        <!-- Font Awesome -->
+        <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet"/>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet"/>
+        <!-- Your custom styles (optional) -->
+        <link href="css/style.css" rel="stylesheet"/>
+        <script referrerpolicy="origin" src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js">
+        </script>
+    </head>
+    <body style="background-color: #f8f8f8;">
+        <!-- header -->
+        <header>
+            <!--Navbar -->
+            <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+                <div class="container">
+                    <button aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent-333" data-toggle="collapse" type="button">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-home mr-1">
+                                    </i>
+                                    Simple Insta
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Задать вопрос
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink-333">
+                                    <i class="fas fa-th-large mr-1">
+                                    </i>
+                                    Форумы
+                                </a>
+                                <div aria-labelledby="navbarDropdownMenuLink-333" class="dropdown-menu dropdown-default">
+                                    <a class="dropdown-item" href="knowledge-base.html">
+                                        База знаний
+                                        <span class="badge white-text float-right" style="background-color: grey; border-radius: 10px 10px 10px 10px;">
+                                            8 471
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="updated-program.html">
+                                        Обновление
+                                        <br/>
+                                        программы
+                                        <span class="badge white-text float-right" style="background-color: grey; border-radius: 10px 10px 10px 10px;">
+                                            13
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="knowledge-base.html">
+                                    <i class="fas fa-book mr-1">
+                                    </i>
+                                    База знании
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <!-- sign-in -->
+                            <!-- Button trigger modal -->
+                            <a class="white-text" data-target="#sign-in-or-registration-modal-window" data-toggle="modal" type="text">
+                                Вход / регистрация
+                            </a>
+                            <!-- Modal -->
+                            <div aria-hidden="true" aria-labelledby="sign-in-or-registration" class="modal fade" id="sign-in-or-registration-modal-window" role="dialog" tabindex="-1">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="sign-in-or-registration">
+                                                Вход / регистрация
+                                            </h5>
+                                            <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                                <span aria-hidden="true">
+                                                    ×
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div class=" ml-3 mr-3">
+                                            <a href="#">
+                                                <span class="badge p-2 mt-3" style="background-color: #DD4B39;">
+                                                    <i class="fab fa-google-plus-g mr-1">
+                                                    </i>
+                                                    Google
+                                                </span>
+                                            </a>
+                                            <a href="#">
+                                                <span class="badge p-2 mt-3" style="background-color: #3B5998;">
+                                                    <i class="fab fa-facebook-f mr-1">
+                                                    </i>
+                                                    Facebook
+                                                </span>
+                                            </a>
+                                            <a href="#">
+                                                <span class="badge p-2 mt-3" style="background-color: #55ACEE;">
+                                                    <i class="fab fa-twitter mr-1">
+                                                    </i>
+                                                    Twitter
+                                                </span>
+                                            </a>
+                                            <a href="#">
+                                                <span class="badge p-2 mt-3" style="background-color: #36638E;">
+                                                    <i class="fab fa-vk mr-1">
+                                                    </i>
+                                                    VK
+                                                </span>
+                                            </a>
+                                            <hr/>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p style="font-size: 14px;">
+                                                <b>
+                                                    Войти, используя Ваш аккаунт в сообществе
+                                                </b>
+                                                <br/>
+                                                Сначала введите Ваш емайл. Мы проверим его и спросим пароль, если аккаунт уже существует. Иначе, Вы сможете создать новый аккаунт.
+                                            </p>
+                                            <!-- Default input -->
+                                            <label for="sign-in-or-registration-input">
+                                                <b>
+                                                    E-mail
+                                                </b>
+                                            </label>
+                                            <input class="form-control" id="sign-in-or-registration-input" placeholder="E-mail" type="text"/>
+                                            <div class="mt-2">
+                                                <p style="font-size: 14px;">
+                                                    При авторизации или регистрации
+                                                    <br/>
+                                                    Вы соглашаетесь с
+                                                    <a class="" href="">
+                                                        Условиями предоставления услуг
+                                                    </a>
+                                                    и
+                                                    <a href="">
+                                                        Политикой конфиденциальности.
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            lorem ipsum
+                                            <a href="#">
+                                                Dolor
+                                            </a>
+                                            sit
+                                            <a href="#">
+                                                amet
+                                            </a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-outline-dark btn-sm" data-dismiss="modal" type="button">
+                                                Отмена
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- sign-in -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--/.Navbar -->
+        </header>
+        <!-- header -->
+        <!-- main -->
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8 col-sm-4 col-md-3">
+                        <div class="p-2">
+                            <div class="card p-3 mb-2" style="border-radius: 10px 10px 10px 10px;">
+                                <img alt="" class="img-fluid" src="img/simple-insta.png"/>
+                            </div>
+                            <div class="card p-3 mt-2" style="border-radius: 10px 10px 10px 10px;">
+                                <p style="font-size: 21px;">
+                                    Ссылки
+                                </p>
+                                <ul style="font-size: 12px;">
+                                    <li>
+                                        <i class="fa fa-paper-plane blue-text" style="font-size: 14px;">
+                                        </i>
+                                        <a class="black-text" href="#" target="blank">
+                                            Наш Telegram канал
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-paper-plane black-text" style="font-size: 14px;">
+                                        </i>
+                                        <a class="black-text" href="#" target="blank">
+                                            Наш SMM канал
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="far fa-comment black-text" style="font-size: 14px;">
+                                        </i>
+                                        <a class="black-text" href="#" target="blank">
+                                            Мониторинг комментариев
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-heart red-text" style="font-size: 14px;">
+                                        </i>
+                                        <a class="black-text" href="#" target="blank">
+                                            Получение активности на аккаунт
+                                        </a>
+                                    </li>
+                                    <li>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card p-3 mt-2" style="border-radius: 10px 10px 10px 10px;">
+                                <p style="font-size: 21px;">
+                                    Форумы
+                                </p>
+                                <ul style="font-size: 12px;">
+                                    <li class="selected">
+                                        <a class="black-text" href="#">
+                                            <b>
+                                                База знаний
+                                            </b>
+                                        </a>
+                                        <span class="badge white-text float-right" style="background-color: grey; border-radius: 10px 10px 10px 10px;">
+                                            8 471
+                                        </span>
+                                    </li>
+                                    <li class="selected">
+                                        <a class="black-text" href="#">
+                                            <b>
+                                                Обновление программы
+                                            </b>
+                                        </a>
+                                        <span class="badge white-text float-right" style="background-color: grey; border-radius: 10px 10px 10px 10px;">
+                                            13
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p style="font-size: 21px;">
+                                    Базы знаний
+                                </p>
+                                <ul style="font-size: 12px;">
+                                    <li class="selected">
+                                        <a class="black-text" href="#">
+                                            <b>
+                                                Полезные статьи
+                                            </b>
+                                        </a>
+                                        <span class="badge white-text float-right" style="background-color: grey; border-radius: 10px 10px 10px 10px;">
+                                            178
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card p-3 mt-2" style="border-radius: 10px 10px 10px 10px;">
+                                <p style="font-size: 21px;">
+                                    Статистика Сообщества
+                                </p>
+                                <div>
+                                    <ul style="font-size: 12px;">
+                                        <li class="nav-item">
+                                            <i class="fas fa-users ml-1">
+                                            </i>
+                                            Участники
+                                            <span class="badge white-text float-right" style="background-color: grey; border-radius: 10px 10px 10px 10px;">
+                                                341 687
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-file-alt ml-1">
+                                            </i>
+                                            Темы
+                                            <span class="badge white-text float-right" style="background-color: grey; border-radius: 10px 10px 10px 10px;">
+                                                143 488
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-comments ml-1">
+                                            </i>
+                                            Комментарии
+                                            <span class="badge white-text float-right" style="background-color: grey; border-radius: 10px 10px 10px 10px;">
+                                                940 116
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-thumbs-up ml-1">
+                                            </i>
+                                            Голоса
+                                            <span class="badge white-text float-right" style="background-color: grey; border-radius: 10px 10px 10px 10px;">
+                                                4 701
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-user-md ml-1">
+                                            </i>
+                                            Сотрудники  поддержки
+                                            <span class="badge white-text float-right" style="background-color: grey; border-radius: 10px 10px 10px 10px;">
+                                                7
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-9">
+                        <div class="search-btn-and-three-buttons">
+                            <div class="input-group md-form form-sm form-2 mt-5">
+                                <input aria-label="Search" class="form-control my-0 py-1 red-border" placeholder="Задайте ключевое слово для поиска информации" type="text"/>
+                                <div class="input-group-append">
+                                    <span class="input-group-text transparent" id="basic-text1">
+                                        <i aria-hidden="true" class="fas fa-search text-grey">
+                                        </i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="first-modal-button">
+                                <!-- support -->
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-default w-100" data-target="#basicExampleModal" data-toggle="modal" style="border-radius: 10px 10px 10px 10px;" type="button">
+                                    <i class="fas fa-envelope mr-1">
+                                    </i>
+                                    Отправить сообщение в техподдержку
+                                </button>
+                                <!-- Modal -->
+                                <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="basicExampleModal" role="dialog" tabindex="-1">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">
+                                                    Оставьте нам приватное сообщение
+                                                </h5>
+                                                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                                    <span aria-hidden="true">
+                                                        ×
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="p-2" style="background-color: #FFDD99;">
+                                                    ВОПРОСЫ ПО ОБЛАЧНОМУ СЕРВИСУ, ЗАДАННЫЕ НЕ ЧЕРЕЗ КАБИНЕТ CLOUD.TOOLIGRAM.COM БУДУТ УДАЛЕНЫ.
+                                                </div>
+                                                <br/>
+                                                <div class="p-2" style="background-color: #FFDD99;">
+                                                    ВСЕ ВОПРОСЫ ПО TOOLIGRAM CLOUD (ОБЛАЧНЫЙ ТУЛИГРАМ) ЗАДАЮТСЯ ТОЛЬКО ЧЕРЕЗ ЛИЧНЫЙ КАБИНЕТ ОБЛАЧНОГО СЕРВИСА:
+                                                    <a href="#">
+                                                        ЗАДАТЬ ВОПРОС
+                                                    </a>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <!-- Default input -->
+                                                    <label for="exampleForm2">
+                                                        <b>
+                                                            Заголовок
+                                                        </b>
+                                                    </label>
+                                                    <input class="form-control" id="exampleForm2" placeholder="Короткое описание вашего обращения" type="text"/>
+                                                </div>
+                                                <div class="mt-2 mb-2">
+                                                    <form method="post">
+                                                        <textarea id="mytextarea" name="mytextarea">
+                                                            Hello, World!
+                                                        </textarea>
+                                                    </form>
+                                                </div>
+                                                <div class="txt-editor">
+                                                    <p>
+                                                        Описание
+                                                    </p>
+                                                    <!-- Editor -->
+                                                    <!-- Editor -->
+                                                </div>
+                                                <div class="mt-2">
+                                                    <div class="input-group">
+                                                        <p>
+                                                            <b>
+                                                                Укажите в выпадающем списке Simple insta SOFT (вопросы по облачной версии (lorem ipsum) задаются из личного кабинета https://lorem-ipsum.com/help.*
+                                                            </b>
+                                                        </p>
+                                                        <select aria-label="Example select with button addon" class="browser-default custom-select" id="inputGroupSelect04">
+                                                            <option selected="">
+                                                                Не выбран
+                                                            </option>
+                                                            <option value="2">
+                                                                Simple insta SOFT
+                                                            </option>
+                                                        </select>
+                                                        <div class="input-group-append">
+                                                            <button class="btn btn-md btn-outline-mdb-color m-0 px-3 py-2 z-depth-0 waves-effect" type="button">
+                                                                <i class="fas fa-users">
+                                                                </i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="social-n-buttons mt-4">
+                                                    <p>
+                                                        <b>
+                                                            E-mail*
+                                                        </b>
+                                                    </p>
+                                                    <div class="input-group">
+                                                        <input aria-describedby="MaterialButton-addon4" aria-label="Recipient's username with two button addons" class="form-control" placeholder="Recipient's username" type="text"/>
+                                                        <div class="input-group-append" id="MaterialButton-addon4">
+                                                            <button class="btn btn-md btn-danger m-0 px-3" type="button">
+                                                                <i class="fab fa-google-plus-g">
+                                                                </i>
+                                                            </button>
+                                                            <button class="btn btn-md btn-indigo m-0 px-3" type="button">
+                                                                <i class="fab fa-facebook-f">
+                                                                </i>
+                                                            </button>
+                                                            <button class="btn btn-md btn-info m-0 px-3" type="button">
+                                                                <i class="fab fa-twitter">
+                                                                </i>
+                                                            </button>
+                                                            <button class="btn btn-md btn-primary m-0 px-3" type="button">
+                                                                <i class="fab fa-vk">
+                                                                </i>
+                                                            </button>
+                                                            <button class="btn btn-md m-0 px-3" type="button">
+                                                                <i class="fas fa-angle-double-right">
+                                                                </i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-4">
+                                                    <p>
+                                                        При авторизации или регистрации Вы соглашаетесь с
+                                                        <a href="#">
+                                                            Условиями предоставления услуг
+                                                        </a>
+                                                        и
+                                                        <a href="#">
+                                                            Политикой конфиденциальности.
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-success" style="border-radius: 10px 10px 10px 10px;" type="button">
+                                                    Отправить
+                                                </button>
+                                                <button class="btn" data-dismiss="modal" style="border-radius: 10px 10px 10px 10px;" type="button">
+                                                    Отмена
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- support -->
+                            </div>
+                            <div class="second-blank-button mt-4">
+                                <a class="btn btn-default w-100" href="#" style="border-radius: 10px 10px 10px 10px;" target="blank">
+                                    <i class="fas fa-compass mr-1">
+                                    </i>
+                                    навигация по форуму
+                                </a>
+                            </div>
+                            <div class="third-blank-button mt-4">
+                                <a class="btn btn-default w-100" href="#" style="border-radius: 10px 10px 10px 10px;" target="blank">
+                                    <i class="fas fa-cloud mr-1">
+                                    </i>
+                                    инструкции по cloud
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="input-group mb-3 mt-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" id="button-addon1" type="button">
+                                                <i class="fas fa-shopping-cart">
+                                                </i>
+                                            </button>
+                                        </div>
+                                        <div class="p-2 white-text" style="background-color: #2D2D2D; width: 80%;">
+                                            <b class="">
+                                                Начальные ресурсы для работы
+                                            </b>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 mt-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" id="button-addon1" type="button">
+                                                <i class="fas fa-tools">
+                                                </i>
+                                            </button>
+                                        </div>
+                                        <div class="p-2 white-text" style="background-color: #2D2D2D; width: 80%;">
+                                            <b class="">
+                                                Начальные ресурсы для работы
+                                            </b>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 mt-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" id="button-addon1" type="button">
+                                                <i class="fas fa-file-alt">
+                                                </i>
+                                            </button>
+                                        </div>
+                                        <div class="p-2 white-text" style="background-color: #2D2D2D; width: 80%;">
+                                            <b class="">
+                                                Текстовые инструкции к программе
+                                            </b>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 mt-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" id="button-addon1" type="button">
+                                                <i class="fas fa-exclamation-circle">
+                                                </i>
+                                            </button>
+                                        </div>
+                                        <div class="p-2 white-text" style="background-color: #2D2D2D; width: 80%;">
+                                            <b class="">
+                                                Видео-инструкции к программе
+                                            </b>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 mt-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" id="button-addon1" type="button">
+                                                <i class="fas fa-question-circle">
+                                                </i>
+                                            </button>
+                                        </div>
+                                        <div class="p-2 white-text" style="background-color: #2D2D2D; width: 80%;">
+                                            <b class="">
+                                                Проблемы и их решения
+                                            </b>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 mt-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" id="button-addon1" type="button">
+                                                <i class="fas fa-mouse-pointer">
+                                                </i>
+                                            </button>
+                                        </div>
+                                        <div class="p-2 white-text" style="background-color: #2D2D2D; width: 80%;">
+                                            <b class="">
+                                                Описание обновлений
+                                            </b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm">
+                                    <div class="input-group mb-3 mt-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" id="button-addon1" type="button">
+                                                <i class="fab fa-youtube">
+                                                </i>
+                                            </button>
+                                        </div>
+                                        <div class="p-2 white-text" style="background-color: #2D2D2D; width: 80%;">
+                                            <b class="">
+                                                Суточные лимиты
+                                            </b>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 mt-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" id="button-addon1" type="button">
+                                                <i class="fas fa-toolbox">
+                                                </i>
+                                            </button>
+                                        </div>
+                                        <div class="p-2 white-text" style="background-color: #2D2D2D; width: 80%;">
+                                            <b class="">
+                                                Описание функции Boost
+                                            </b>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 mt-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" id="button-addon1" type="button">
+                                                <i class="fas fa-clock">
+                                                </i>
+                                            </button>
+                                        </div>
+                                        <div class="p-2 white-text" style="background-color: #2D2D2D; width: 80%;">
+                                            <b class="">
+                                                Цены на Tooligram
+                                            </b>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 mt-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" id="button-addon1" type="button">
+                                                <i class="fas fa-video">
+                                                </i>
+                                            </button>
+                                        </div>
+                                        <div class="p-2 white-text" style="background-color: #2D2D2D; width: 80%;">
+                                            <b class="">
+                                                Как обновить программу
+                                            </b>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 mt-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" id="button-addon1" type="button">
+                                                <i class="fas fa-question">
+                                                </i>
+                                            </button>
+                                        </div>
+                                        <div class="p-2 white-text" style="background-color: #2D2D2D; width: 80%;">
+                                            <b class="">
+                                                Задать вопрос
+                                            </b>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 mt-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" id="button-addon1" type="button">
+                                                <i class="fas fa-money-check">
+                                                </i>
+                                            </button>
+                                        </div>
+                                        <div class="p-2 white-text" style="background-color: #2D2D2D; width: 80%;">
+                                            <b class="">
+                                                Часто задаваемые вопросы
+                                            </b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4" style="background-color: #fff;">
+                                <p class="p-3">
+                                    *Сервис - здесь и далее под термином "Сервис" понимается приобретенная Заказчиком в рамках договора оферты неисключительная лицензия на программные продукты ООО "Тулиграм Групп".
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main -->
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script src="js/jquery-3.4.1.min.js" type="text/javascript">
+        </script>
+        <!-- Bootstrap tooltips -->
+        <script src="js/popper.min.js" type="text/javascript">
+        </script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="js/bootstrap.min.js" type="text/javascript">
+        </script>
+        <!-- MDB core JavaScript -->
+        <script src="js/mdb.min.js" type="text/javascript">
+        </script>
+        <script>
+            tinymce.init({
+            selector: '#mytextarea'
+          });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+        <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+        <title>
+            База знаний / Simple Insta
+        </title>
+        <!-- Font Awesome -->
+        <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet"/>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet"/>
+        <!-- Your custom styles (optional) -->
+        <link href="css/style.css" rel="stylesheet"/>
+        <link href="css/lightbox/lightbox.css" rel="stylesheet"/>
+    </head>
+    <body style="background-color: #f8f8f8;">
+        <header>
+            <!--Navbar -->
+            <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+                <div class="container">
+                    <button aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent-333" data-toggle="collapse" type="button">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa fa-home mr-1">
+                                    </i>
+                                    Simple Insta
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Задать вопрос
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink-333">
+                                    <i class="fas fa-th-large mr-1">
+                                    </i>
+                                    Форумы
+                                </a>
+                                <div aria-labelledby="navbarDropdownMenuLink-333" class="dropdown-menu dropdown-default">
+                                    <a class="dropdown-item" href="knowledge-base.html">
+                                        База знаний
+                                        <span class="badge white-text float-right" style="background-color: grey; border-radius: 10px 10px 10px 10px;">
+                                            8 471
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item" href="updated-program.html">
+                                        Обновление
+                                        <br/>
+                                        программы
+                                        <span class="badge white-text float-right" style="background-color: grey; border-radius: 10px 10px 10px 10px;">
+                                            13
+                                        </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="knowledge-base.html">
+                                    <i class="fas fa-book mr-1">
+                                    </i>
+                                    База знании
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <!-- sign-in -->
+                            <!-- Button trigger modal -->
+                            <a class="white-text" data-target="#sign-in-or-registration-modal-window" data-toggle="modal" type="text">
+                                Вход / регистрация
+                            </a>
+                            <!-- Modal -->
+                            <div aria-hidden="true" aria-labelledby="sign-in-or-registration" class="modal fade" id="sign-in-or-registration-modal-window" role="dialog" tabindex="-1">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="sign-in-or-registration">
+                                                Вход / регистрация
+                                            </h5>
+                                            <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                                <span aria-hidden="true">
+                                                    ×
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div class=" ml-3 mr-3">
+                                            <a href="#">
+                                                <span class="badge p-2 mt-3" style="background-color: #DD4B39;">
+                                                    <i class="fab fa-google-plus-g mr-1">
+                                                    </i>
+                                                    Google
+                                                </span>
+                                            </a>
+                                            <a href="#">
+                                                <span class="badge p-2 mt-3" style="background-color: #3B5998;">
+                                                    <i class="fab fa-facebook-f mr-1">
+                                                    </i>
+                                                    Facebook
+                                                </span>
+                                            </a>
+                                            <a href="#">
+                                                <span class="badge p-2 mt-3" style="background-color: #55ACEE;">
+                                                    <i class="fab fa-twitter mr-1">
+                                                    </i>
+                                                    Twitter
+                                                </span>
+                                            </a>
+                                            <a href="#">
+                                                <span class="badge p-2 mt-3" style="background-color: #36638E;">
+                                                    <i class="fab fa-vk mr-1">
+                                                    </i>
+                                                    VK
+                                                </span>
+                                            </a>
+                                            <hr/>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p style="font-size: 14px;">
+                                                <b>
+                                                    Войти, используя Ваш аккаунт в сообществе
+                                                </b>
+                                                <br/>
+                                                Сначала введите Ваш емайл. Мы проверим его и спросим пароль, если аккаунт уже существует. Иначе, Вы сможете создать новый аккаунт.
+                                            </p>
+                                            <!-- Default input -->
+                                            <label for="sign-in-or-registration-input">
+                                                <b>
+                                                    E-mail
+                                                </b>
+                                            </label>
+                                            <input class="form-control" id="sign-in-or-registration-input" placeholder="E-mail" type="text"/>
+                                            <div class="mt-2">
+                                                <p style="font-size: 14px;">
+                                                    При авторизации или регистрации
+                                                    <br/>
+                                                    Вы соглашаетесь с
+                                                    <a class="" href="">
+                                                        Условиями предоставления услуг
+                                                    </a>
+                                                    и
+                                                    <a href="">
+                                                        Политикой конфиденциальности.
+                                                    </a>
+                                                </p>
+                                            </div>
+                                            lorem ipsum
+                                            <a href="#">
+                                                Dolor
+                                            </a>
+                                            sit
+                                            <a href="#">
+                                                amet
+                                            </a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-outline-dark btn-sm" data-dismiss="modal" type="button">
+                                                Отмена
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- sign-in -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--/.Navbar -->
+        </header>
+        <!-- header -->
+        <!-- main -->
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8 col-sm-4 col-md-3">
+                        <div class="p-2">
+                            <div class="card p-3 mb-2" style="border-radius: 10px 10px 10px 10px;">
+                                <img alt="" class="img-fluid" src="img/simple-insta.png"/>
+                            </div>
+                            <div class="card p-3 mt-2" style="border-radius: 10px 10px 10px 10px;">
+                                <p style="font-size: 21px;">
+                                    Поделиться
+                                </p>
+                                <div>
+                                    <a href="#">
+                                        <i class="fab fa-twitter ml-1 mr-1 info-text">
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f ml-1 mr-1 indigo-text">
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fas fa-envelope ml-1 mr-1 grey-text">
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-vk ml-1 mr-1 primary-text">
+                                        </i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-odnoklassniki ml-1 mr-1 orange-text">
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card p-3 mt-2" style="border-radius: 10px 10px 10px 10px;">
+                                <p style="font-size: 21px;">
+                                    Статистика статьи
+                                </p>
+                                <div>
+                                    <ul style="font-size: 12px;">
+                                        <li class="nav-item">
+                                            <i class="fas fa-plus ml-1">
+                                            </i>
+                                            Создан
+                                            <b class="float-right text-black-50">
+                                                3 месяца назад
+                                            </b>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-sync-alt ml-1">
+                                            </i>
+                                            Обновлен
+                                            <b class="float-right text-black-50">
+                                                2 месяца назад
+                                            </b>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-thumbs-up ml-1">
+                                            </i>
+                                            Полезно
+                                            <span class="badge white-text float-right" style="background-color: grey; border-radius: 10px 10px 10px 10px;">
+                                                0
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-eye ml-1">
+                                            </i>
+                                            Просмотры
+                                            <span class="badge white-text float-right" style="background-color: grey; border-radius: 10px 10px 10px 10px;">
+                                                9 201
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-8 col-md-9">
+                        <div class="card mt-2 mb-2 p-2" style="border-radius: 10px 10px 10px 10px;">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb mt-2" style="background-color: transparent; padding: 0px;">
+                                    <li class="breadcrumb-item">
+                                        <a href="#">
+                                            Полезные статьи
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="#">
+                                            News
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="#">
+                                            Новости проекта Simple insta
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumb-item active">
+                                        <i class="fas fa-file-alt mr-2">
+                                        </i>
+                                        Статьи
+                                    </li>
+                                </ol>
+                            </nav>
+                            <div class="text-center">
+                                <i class="fas fa-cog fa-3x mr-1 grey-text">
+                                </i>
+                                <a class="h5" href="#">
+                                    Сбор по Хэштегам
+                                </a>
+                            </div>
+                            <div class="p-3" style="font-size: 13px;">
+                                <p>
+                                    Функция сбора по хэштегам, служит для сбора аудитории по определенным хэштегам.
+                                    <br/>
+                                    Если пользователь хоть раз, к примеру оставлял пометку с хэштегом "здоровье" то соответственно данный пользователь окажется в базе после сбора по хэштегу "здоровье" + все другие пользователи, которые так же использовали хоть раз хэштег "здоровье".
+                                </p>
+                                <p class="mt-4">
+                                    1) Перейдите в раздел "Сбор аудитории"
+                                    <br/>
+                                    2) Нажмите на "Указать задачу"
+                                </p>
+                                <div class="">
+                                    <a data-lightbox="roadtrip" href="file:///D:/Desktop/si-help/img/collection-h-t-1.jpg">
+                                        <img class="img-fluid" src="img/collection-h-t-1.jpg"/>
+                                    </a>
+                                </div>
+                                <p class="mt-4">
+                                    Основным вариантом для сбора аудитории по хэштегам, рекомендуем использовать функцию Boost. Прочитать подробнее о ней можно по ссылке:
+                                    <br/>
+                                    <a href="#">
+                                        http://support.tooligram.com/topics/11571-novaya-funktsiya-boost/
+                                    </a>
+                                    <br/>
+                                    Для функции Boost аккаунты не нужны. Скорость работы Сборов в разы быстрее!
+                                    <br/>
+                                    Переключите флаг "Использовать" в активное положение и вставьте в поле "Ключ:" ваш ключ ускорителя.
+                                    <br/>
+                                    После, нажмите на "По хэштегам"
+                                    <br/>
+                                    <b>
+                                        Как настроить сам сбор по хеш - тегам смотри далее с пункта 5.
+                                    </b>
+                                </p>
+                                <div class="">
+                                    <a data-lightbox="roadtrip" href="file:///D:/Desktop/si-help/img/collection-h-t-2.jpg">
+                                        <img class="img-fluid" src="img/collection-h-t-2.jpg"/>
+                                    </a>
+                                </div>
+                                <p class="mt-4">
+                                    <b>
+                                        Альтернативный способ сбора с использованием аккаунта.
+                                    </b>
+                                </p>
+                                <p class="mt-4">
+                                    1) Нажимаете на вкладку "Сбор аудитории" в программе.
+                                    <br/>
+                                    2) Нажимаете "Указать задачу"
+                                </p>
+                                <div class="">
+                                    <a data-lightbox="roadtrip" href="file:///D:/Desktop/si-help/img/collection-h-t-3.jpg">
+                                        <img class="img-fluid" src="img/collection-h-t-3.jpg"/>
+                                    </a>
+                                </div>
+                                <p class="mt-4">
+                                    3) В левое окошко вводите не нужный аккаунт инстаграм в формате логин:пароль, который будет участвовать в сборе.
+                                    <br/>
+                                    <i>
+                                        (Не стоит вводит тот аккаунт, который вы будете продвигать. Лучше использовать не нужный аккаунт или аккаунты. Если вы не знаете, где приобрести аккаунты, то в качестве примера, есть пару сервисов:
+                                    </i>
+                                    <br/>
+                                    <a href="#">
+                                        http://zismo.biz/forum/70-kupit-i-prodat-akkaunty/
+                                    </a>
+                                    <br/>
+                                    <a href="#">
+                                        http://djekxa.ru/ )
+                                    </a>
+                                    <br/>
+                                    4) Сверху указываете имя сбора, которое вам нужно(опционально).
+                                    <br/>
+                                    5) Выбираете "По хэштегам"
+                                </p>
+                                <div class="">
+                                    <a data-lightbox="roadtrip" href="file:///D:/Desktop/si-help/img/collection-h-t-4.jpg">
+                                        <img class="img-fluid" src="img/collection-h-t-4.jpg"/>
+                                    </a>
+                                </div>
+                                <p class="mt-4">
+                                    <b>
+                                        Сбор аудитории по хэштегам.
+                                    </b>
+                                </p>
+                                <p class="mt-4">
+                                    6) Вводите хэштеги, которые вам нужны,
+                                    <b>
+                                        БЕЗ РЕШЕТОК
+                                    </b>
+                                    и на любом языке (русский, английский) маленькими буквами, в столбик!
+                                    <br/>
+                                    7) Выбираете пустой .txt(Текстовый файл), куда сохранится аудитория.
+                                    <br/>
+                                    8) Вписываете то количество, которое вам нужно собрать
+                                    <b>
+                                        С КАЖДОГО
+                                    </b>
+                                    хэштега
+                                    <br/>
+                                    9) Кнопка "Зацикливать" необходима для большего количества сбора по хэштегу, то есть, если количество записей по хэштегу может превышать 500.000, то необходимо активировать "Зацикливание".
+                                    <br/>
+                                    10) Нажимаете "Добавить"
+                                </p>
+                                <div class="">
+                                    <a data-lightbox="roadtrip" href="file:///D:/Desktop/si-help/img/collection-h-t-5.jpg">
+                                        <img class="img-fluid" src="img/collection-h-t-5.jpg"/>
+                                    </a>
+                                </div>
+                                <p class="mt-4">
+                                    11) После нажатия кнопки "Добавить" выделяем задание левой кнопкой мыши и нажимаем "Старт", задание должно перейти в статус "Активно".
+                                </p>
+                                <p class="mt-4">
+                                    12) Так же не забывайте удалять дубликаты из собранной базы:
+                                </p>
+                                <div class="">
+                                    <a data-lightbox="roadtrip" href="file:///D:/Desktop/si-help/img/collection-h-t-6.jpg">
+                                        <img class="img-fluid" src="img/collection-h-t-6.jpg"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div style="font-size: 13px;">
+                                <a href="articles.collection-op.html">
+                                    <b>
+                                        <i class="fas fa-angle-double-left">
+                                        </i>
+                                        Предыдущая статья:
+                                    </b>
+                                    Сбор по конкурентам.
+                                </a>
+                                <a class="float-right" href="articles.collection-geo.html">
+                                    <b>
+                                        Следующая статья:
+                                    </b>
+                                    <br/>
+                                    Сбор по геолокации.
+                                    <i class="fas fa-angle-double-right">
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card mt-2 mb-5" style="border-radius: 10px 10px 10px 10px;">
+                            <p class="p-4">
+                                <b>
+                                    *Сервис
+                                </b>
+                                - здесь и далее под термином "Сервис" понимается приобретенная Заказчиком в рамках договора оферты неисключительная лицензия на программные продукты "Simple insta".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main -->
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script src="js/jquery-3.4.1.min.js" type="text/javascript">
+        </script>
+        <!-- Bootstrap tooltips -->
+        <script src="js/popper.min.js" type="text/javascript">
+        </script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="js/bootstrap.min.js" type="text/javascript">
+        </script>
+        <!-- MDB core JavaScript -->
+        <script src="js/mdb.min.js" type="text/javascript">
+        </script>
+        <script src="js/own.js" type="text/javascript">
+        </script>
+        <script src="js/lightbox/lightbox.js">
+        </script>
+        <script type="text/javascript">
+            // Tooltips Initialization
+            $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+                })
+            /*// popovers Initialization
+            $(function () {
+            $('[data-toggle="popover"]').popover()
+            })*/
+        </script>
+    </body>
+</html>
